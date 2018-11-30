@@ -1,5 +1,5 @@
 /**
- * Provide credentials from consoile input
+ * Provide credentials from console input
  */
 export class ConsoleAuthProvider {
   async provideCredentials(realm) {
@@ -21,3 +21,5 @@ export class ConsoleAuthProvider {
     return response;
   }
 }
+
+export default ConsoleAuthProvider;

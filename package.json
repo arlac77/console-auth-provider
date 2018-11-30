@@ -1,5 +1,8 @@
 {
   "name": "console-auth-provider",
   "description": " Provide credentials from console user input",
-  "module": "src/auth-provider.mjs"
+  "module": "src/auth-provider.mjs",
+  "dependencies": {
+    "enquirer": "^2.1.1"
+  }
 }
