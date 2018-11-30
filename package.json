@@ -1,0 +1,5 @@
+{
+  "name": "console-auth-provider",
+  "description": " Provide credentials from console user input",
+  "module": "src/auth-provider.mjs"
+}
