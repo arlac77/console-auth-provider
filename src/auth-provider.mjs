@@ -1,3 +1,5 @@
+const { prompt } = require("enquirer");
+
 /**
  * Provide credentials from console input
  */
