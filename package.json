@@ -1,8 +1,79 @@
 {
   "name": "console-auth-provider",
-  "description": " Provide credentials from console user input",
+  "version": "0.0.0-semantic-release",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "{{main}}",
   "module": "src/auth-provider.mjs",
+  "description": " Provide credentials from console user input",
+  "keywords": [
+    "npm-package-template"
+  ],
+  "contributors": [
+    {
+      "name": "Markus Felten",
+      "email": "markus.felten@gmx.de"
+    }
+  ],
+  "license": "BSD-2-Clause",
+  "scripts": {
+    "cover": "c8 --temp-directory build/coverage ava && c8 report -r lcov --temp-directory build/coverage",
+    "test": "ava",
+    "posttest": "npm run prepare && markdown-doctest",
+    "prepare": "rollup -c",
+    "docs": "documentation readme src/auth-provider.mjs --section=API",
+    "lint": "documentation lint src/auth-provider.mjs",
+    "semantic-release": "semantic-release",
+    "travis-deploy-once": "travis-deploy-once"
+  },
   "dependencies": {
     "enquirer": "^2.1.1"
+  },
+  "devDependencies": {
+    "documentation": "^8.1.2",
+    "markdown-doctest": "^0.9.1",
+    "ava": "^1.0.0-rc.2",
+    "c8": "^3.2.1",
+    "esm": "^3.0.84",
+    "rollup": "^0.67.3",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-cleanup": "^3.0.0",
+    "rollup-plugin-node-resolve": "^3.4.0",
+    "rollup-plugin-json": "^3.1.0",
+    "rollup-plugin-executable": "^1.3.0",
+    "semantic-release": "^15.12.2",
+    "travis-deploy-once": "^5.0.9"
+  },
+  "engines": {
+    "node": ">=10.14"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arlac77/console-auth-provider.git"
+  },
+  "bugs": {
+    "url": "https://github.com/arlac77/console-auth-provider/issues"
+  },
+  "homepage": "https://github.com/arlac77/console-auth-provider#readme",
+  "ava": {
+    "require": [
+      "esm"
+    ],
+    "extensions": [
+      "js",
+      "mjs"
+    ],
+    "babel": false,
+    "compileEnhancements": false,
+    "files": [
+      "tests/*-test.js",
+      "tests/*-test.mjs"
+    ]
+  },
+  "template": {
+    "repository": {
+      "url": "https://github.com/arlac77/npm-package-template.git"
+    }
   }
 }
