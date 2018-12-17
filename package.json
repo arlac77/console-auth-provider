@@ -28,7 +28,7 @@
     "travis-deploy-once": "travis-deploy-once"
   },
   "dependencies": {
-    "enquirer": "^2.1.1"
+    "enquirer": "^2.2.0"
   },
   "devDependencies": {
     "documentation": "^9.0.0",
