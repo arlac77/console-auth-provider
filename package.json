@@ -8,7 +8,6 @@
   "module": "src/auth-provider.mjs",
   "description": " Provide credentials from console user input",
   "keywords": [
-    "npm-package-template",
     "auth-provider"
   ],
   "contributors": [
