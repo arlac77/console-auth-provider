@@ -1,4 +1,4 @@
-const { prompt } = require("enquirer");
+import  Enquirer  from "enquirer";
 
 /**
  * Provide credentials from console input
@@ -7,7 +7,7 @@ export class ConsoleAuthProvider {
   async provideCredentials(realm) {
     const title = realm && realm.Basic ? realm.Basic.realm : '???';
 
-    const response = await prompt(
+    const response = await Enquirer.prompt(
       [{
         type: "input",
         name: "user",
