@@ -1,0 +1,10 @@
+{
+  "name": "console-auth-provider",
+  "description": " Provide credentials from console user input",
+  "icons": [
+    {
+      "src": "facicon.ico",
+      "sizes": "16x16"
+    }
+  ]
+}
