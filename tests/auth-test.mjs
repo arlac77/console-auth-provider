@@ -1,7 +1,7 @@
 import test from "ava";
 import { promisify } from "util";
 
-import ConsoleAuthProvider from "../src/auth-provider";
+import ConsoleAuthProvider from "../src/auth-provider.mjs";
 
 test("provider", async t => {
   const ap = new ConsoleAuthProvider();
