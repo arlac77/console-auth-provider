@@ -8,8 +8,7 @@
   "type": "module",
   "main": "./src/auth-provider.mjs",
   "exports": {
-    ".": "./src/auth-provider.mjs",
-    "./": "./"
+    ".": "./src/auth-provider.mjs"
   },
   "description": " Provide credentials from console user input",
   "keywords": [
