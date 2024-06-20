@@ -1,3 +1,4 @@
+bin
 build
 bun.lockb
 /node_modules/**
@@ -7,3 +8,5 @@ bun.lockb
 .DS_Store
 .test
 .tmp
+types
+dist
